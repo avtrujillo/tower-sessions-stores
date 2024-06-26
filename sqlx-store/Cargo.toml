@@ -23,11 +23,13 @@ rmp-serde = "1.1.2"
 sqlx = { version = "0.7.2", features = ["time", "runtime-tokio"] }
 thiserror = "1.0.56"
 time = "0.3.31"
-tower-sessions-core = { version = "0.12.1", features = ["deletion-task"] }
+#tower-sessions-core = { version = "0.12.1", features = ["deletion-task"] }
+tower-sessions-core = {git = "https://github.com/avtrujillo/tower-sessions", features = ["deletion-task"]}
 
 [dev-dependencies]
 axum = "0.7.1"
-tower-sessions = "0.12.1"
+
+tower-sessions = {git = "https://github.com/avtrujillo/tower-sessions"}
 tokio = { version = "1.32.0", features = ["full"] }
 tokio-test = "0.4.3"
 serde = "1"
