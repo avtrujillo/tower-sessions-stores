@@ -13,20 +13,20 @@ documentation = "https://docs.rs/tower-sessions-mongodb-store"
 readme = "README.md"
 
 [dependencies]
-async-trait = "0.1.77"
-bson = { version = "2.7.0", features = ["time-0_3"] }
-mongodb = { version = "2.7.0" }
-rmp-serde = "1.1.2"
-serde = "1.0.195"
-thiserror = "1.0.56"
-time = "0.3.31"
-tower-sessions-core = { version = "0.14.0", features = ["deletion-task"] }
+async-trait = "0.1.89"
+bson = { version = "3.1.0", features = ["time-0_3"] }
+mongodb = { version = "3.7.0" }
+rmp-serde = "1.3.1"
+serde = "1.0.228"
+thiserror = "2.0.18"
+time = "0.3.47"
+tower-sessions-core = { version = "0.15.0", features = ["deletion-task"] }
 
 [dev-dependencies]
-axum = "0.8.1"
-tower-sessions = "0.14.0"
-tokio = { version = "1.32.0", features = ["full"] }
-tokio-test = "0.4.3"
+axum = "0.8.9"
+tower-sessions = "0.15.0"
+tokio = { version = "1.52.3", features = ["full"] }
+tokio-test = "0.4.5"
 serde = "1"
 
 [[example]]
